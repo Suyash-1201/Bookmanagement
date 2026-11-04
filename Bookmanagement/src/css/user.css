@@ -1,0 +1,150 @@
+/* Container Layout */
+.user-container {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  color: #333333;
+}
+
+/* Header & Add Button */
+.user-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.user-header h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.add-btn {
+  background-color: #0d8a4f;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.add-btn:hover {
+  background-color: #0a6f3f;
+}
+
+.add-btn:active {
+  transform: scale(0.98);
+}
+
+/* Table Responsive Box */
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  border-radius: 4px;
+}
+
+/* Table Design */
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  background-color: #ffffff;
+}
+
+.user-table thead tr {
+  border-bottom: 2px solid #222222;
+}
+
+.user-table th {
+  padding: 14px 16px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #111111;
+}
+
+.user-table tbody tr {
+  border-bottom: 1px solid #e0e0e0;
+  transition: background-color 0.15s ease;
+}
+
+/* Alternating Light Zebra Rows */
+.user-table tbody tr:nth-child(even) {
+  background-color: #f7f7f7;
+}
+
+.user-table tbody tr:hover {
+  background-color: #eaeaea;
+}
+
+.user-table td {
+  padding: 14px 16px;
+  font-size: 14px;
+  color: #444444;
+  vertical-align: middle;
+}
+
+.id-column {
+  font-weight: 600;
+  color: #555555;
+}
+
+.name-column {
+  font-weight: 500;
+  color: #111111;
+}
+
+/* Delete Action Button Styling (Matching reference red square action style) */
+.action-header {
+  text-align: right;
+  padding-right: 24px;
+}
+
+.action-cell {
+  text-align: right;
+  padding-right: 20px;
+}
+
+.delete-btn {
+  background-color: transparent;
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.delete-btn:hover {
+  background-color: #f77575;
+}
+
+.delete-btn:active {
+  transform: scale(0.95);
+}
+
+.delete-icon {
+  width: 20px;
+  height: 20px;
+  
+  object-fit: contain;
+}
+
+/* Empty State */
+.no-data {
+  text-align: center;
+  padding: 30px;
+  color: #888888;
+  font-style: italic;
+}
