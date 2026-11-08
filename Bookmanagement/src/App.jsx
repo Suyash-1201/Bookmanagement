@@ -11,20 +11,22 @@ import Nav from './comp/Nav'
 import Borrower from './comp/Borrower'
 import User from './comp/User'
 import Booklist from './comp/Booklist'
+import Adminpage from './comp/Adminpage'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-    <Nav/>
+   
       <Routes>
         <Route path='/list' element={<Booklist/>}/>
-        <Route path='/' element={<User/>}/>
+        <Route path='/user' element={<User/>}/>
         <Route path='/stud' element={<Student/>}/>
         <Route path='/book' element={<Books/>}/>
         <Route path='/issue' element={<Issue/>}/>
         <Route path='/borrow' element={<Borrower/>}/>
+        <Route path='/' element={<Adminpage/>}/>
       </Routes>
     </>
   )

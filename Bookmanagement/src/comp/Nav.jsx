@@ -9,7 +9,7 @@ const Nav = () => {
     <div className='nav-main'>
       <button onClick={()=>nav("/list")}>Books</button>
       <button onClick={()=>nav("/borrow")}>Borrowers</button>
-      <button onClick={()=>nav("/")}>user</button>
+      <button onClick={()=>nav("/user")}>user</button>
     </div>
   )
 }
